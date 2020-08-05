@@ -14,7 +14,10 @@ export default function SearchBar(props) {
 
   return (
     <section className="search">
-      <form className="search__form" onSubmit={event => event.preventDefault()}>
+      <form
+        className="search__form"
+        onSubmit={(event) => event.preventDefault()}
+      >
         <input
           className="radius"
           spellCheck="false"
@@ -22,7 +25,7 @@ export default function SearchBar(props) {
           name="search"
           type="text"
           value={value}
-          onChange={event => setValue(event.target.value)}
+          onChange={(event) => setValue(event.target.value)}
         />
       </form>
     </section>
